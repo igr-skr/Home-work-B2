@@ -1,0 +1,35 @@
+<script>
+	// скрипт таблицы умножения
+	// 12 задач , 2 списка правильных и ошибочных ответов, оценка 
+
+	var info = {
+		results : 0,
+		answers : []		
+	}
+
+	for( i=0 ; i<3 ; i++ ){
+
+		var num1 = ((Math.random() * 10000) / 100).toFixed(0);
+		var num2 = ((Math.random() * 10000) / 100).toFixed(0);
+		var question = num1 * num2;
+		var text_question = `${num1}  *  ${num2}`;
+
+
+
+		var answer = +prompt(text_question + "\nEnter your answer!");
+		
+	info.answers.push(text_question + " = " + answer);
+
+		var number = i+1;
+
+		var correct = 0;
+			
+		correct <= 2 ? 2 : correct;
+	}
+
+	console.log("Ваша оценка " + correct)
+	console.log("Ваша оценка " + correct)
+
+	console.log(info);
+	
+</script>
